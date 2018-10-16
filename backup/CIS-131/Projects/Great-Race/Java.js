@@ -7,11 +7,33 @@ var futon = ['Start.png', 'Ready.png', 'Set.png', 'Go.png'];
 var hacker = !false;
 
 function css() {
+    var wand = document.getElementById('controller');
+    wand.style.backgroundColor = 'azure';
+    wand.style.border = 'groove black 2px';
+    wand.style.margin = '.5%';
+    wand.style.textAlign = 'center';
 
-}
+    var tan = document.getElementsByTagName('body')[0];
+    tan.style.backgroundColor = 'tan';
+    tan.style.position = 'absolute';
+    tan.style.width = '98%';
+    tan.style.height = '98%';
 
-function css2() {
-    
+    var wow = document.getElementById('container');
+    wow.style.position = 'absolute';
+    wow.style.width = '100%';
+    wow.style.height = '80%';
+    wow.style.backgroundColor = 'silver';
+    wow.style.border = 'groove black 2px';
+    wow.style.margin = '.5%;';
+
+    for (var i = 0; i < (Racer.length * 2); i++) {
+        var pchan = document.getElementsByTagName('p')[i];
+        pchan.style.padding = '2%';
+        pchan.style.width = '100%';
+        pchan.style.margin = 'auto';
+        pchan.style.textAlign = 'center';
+    }
 }
 
 function ScoreBoard() {
@@ -29,20 +51,21 @@ function ScoreBoard() {
         holder.style.border = 'groove crimson 2px';
         holder.style.margin = '2%';
         board.appendChild(holder);
-        holder.innerHTML = `<p class="autoM" onclick="cheater(${i})"> ${name} </p> <p id="Score${i}" class="autoM" onclick="cheater(${i})"> ${0} </p>`;
+        holder.innerHTML = `<p onclick="cheater(${i})"> ${name} </p> <p id="Score${i}" onclick="cheater(${i})"> ${0} </p>`;
     }
     set();
 }
 
 function Score(i) {
-
+    var score = document.getElementById(`Score${i}`);
+    score.innerHTML = `${parseInt(score.innerHTML) + 1}`;
 }
 
 function cheater(z) {
     if (hacker == !true) {
         for (var i = 0; i < Racer.length; i++) {
             if (!(i == z)) {
-
+                document.getElementById(i).style.left = '0px';
             }
         }
         console.log('Are we gambling or just for fun?');
@@ -73,28 +96,25 @@ function createHead() {
     x.src = futon[0];
     x.alt = 'click meh';
     x.style.position = 'relative';
-    x.style.left = '40%';
     x.style.width = '20%';
     x.onclick = stage;
     document.getElementById('controller').appendChild(x);
 }
 
 function Countdown() {
+    clearInterval(Final);
+    Final = setInterval(Countdown, (Math.ceil(Math.random() * 3) * 1000));
     var inc = document.getElementById('click');
     var ink = inc.getAttribute('src');
 
     if (ink == "Start.png") {
-        clearInterval(Final);
         inc.src = futon[1];
-        Final = setInterval(Countdown, (Math.ceil(Math.random() * 3) * 1000));
     } else if (ink == "Ready.png") {
-        clearInterval(Final);
         inc.src = futon[2];
-        Final = setInterval(Countdown, (Math.ceil(Math.random() * 3) * 1000));
     } else if (ink == "Set.png") {
-        clearInterval(Final);
         inc.src = futon[3];
-        Final = setInterval(Countdown, (Math.ceil(Math.random() * 3) * 1000));
+        clearInterval(Final);
+        Final = setInterval(Countdown, 800);
     } else {
         clearInterval(Final);
         Start();
@@ -103,13 +123,25 @@ function Countdown() {
 
 function controller() {
     var kid = document.getElementById('controller');
-    for (var i = 1; i < futon.length; i++) {
+    kid.innerHTML = "";
 
+    for (var i = 1; i < futon.length; i++) {
+        var x = document.createElement('img');
+        x.id = `click${i}`;
+        x.src = futon[i];
+        x.alt = 'click meh';
+        x.style.position = 'relative';
+        x.style.width = '20%';
+        document.getElementById('controller').appendChild(x);
         kid.appendChild(x);
     }
+    document.getElementById('click1').onclick = Red;
+    document.getElementById('click2').onclick = Yellow;
+    document.getElementById('click3').onclick = Green;
 }
 
 function stage() {
+    document.getElementById('click').onclick = "";
     for (var i = 0; i < Racer.length; i++) {
         var x = document.getElementById(i);
         x.src = Racer[i];
@@ -123,8 +155,7 @@ function stage() {
 function Start() {
     hacker = !true;
     controller();
-    var line = document.getElementsByTagName('body')[0].offsetWidth;
-    console.log(line);
+    running = setInterval(move, (Math.ceil(Math.random() * 6) * 10));
 }
 
 function Red() {
@@ -138,17 +169,52 @@ function Yellow() {
 
 function Green() {
     Red();
-    running = setInterval(move, (Math.ceil(Math.random() * 60)));
+    running = setInterval(move, (Math.ceil(Math.random() * 6) * 10));
 }
 
 function move() {
+    var x = 626;
+    //var line = document.getElementsByTagName('body')[0].offsetWidth;
+    var line = document.getElementById('container').offsetWidth;
 
+    for (var i = 0; i < Racer.length; i++) {
+        var rar = document.getElementById(i);
+        var Left = parseInt(rar.style.left);
+        
+        if (Left < (line - (line/10))) {
+            rar.style.left = `${Left + (Math.ceil(Math.random() * 10))}px`;
+        } else {
+            x = i;
+            Red();
+        }
+    }
+
+    if (!(x == 626)) {
+        hacker = !false;
+        Winner(x);
+    }
 }
 
 function Winner(i) {
     clear();
     Score(i);
+    var broken = Racer[i].split('.');
+    var name = broken[0];
+    var magic = document.getElementById('controller');
+    magic.innerHTML = `<div> Congratulations ${name}! </div>`;
+    magic = magic.firstElementChild;
+    magic.style.padding = '2%';
+    magic.style.fontSize = '350%';
 
+    var x = document.createElement('img');
+    x.id = i;
+    x.src = Victor[i];
+    x.alt = 'Racer';
+    x.onclick = set;
+    document.getElementById('container').appendChild(x);
+    x.style.position = 'relative';
+    x.style.left = '20%';
+    x.style.width = '45%';
 }
 
 function clear() {
