@@ -1,8 +1,8 @@
 // JavaScript source code
 
-var Racer = ['Start.png', 'Ready.png', 'Set.png', 'Go.png', 'Start.png', 'Ready.png', 'Set.png', 'Go.png'];
-var Stance = ['Start.png', 'Ready.png', 'Set.png', 'Go.png', 'Start.png', 'Ready.png', 'Set.png', 'Go.png'];
-var Victor = ['Start.png', 'Ready.png', 'Set.png', 'Go.png', 'Start.png', 'Ready.png', 'Set.png', 'Go.png'];
+var Racer = ['Stitch.png', 'Zelda.png', 'Mario.png', 'Gir.png', 'Tinkerbell.png', 'Daxter.png', 'Grimoire.png', 'Squall.png'];             // Running images src ******** p.s. The file name becomes their name ^-^
+var Stance = ['SStitch.png', 'SZelda.png', 'SMario.png', 'SGir.png', 'STinkerbell.png', 'SDaxter.png', 'SGrimoire.png', 'SSquall.png'];     // Starting Stance image src
+var Victor = ['VStitch.png', 'VZelda.png', 'VMario.png', 'VGir.png', 'VTinkerbell.png', 'VDaxter.png', 'VGrimoire.png', 'VSquall.png'];     // Victory Pose image src
 var futon = ['Start.png', 'Ready.png', 'Set.png', 'Go.png'];
 var hacker = !false;
 
@@ -22,7 +22,7 @@ function css() {
     var wow = document.getElementById('container');
     wow.style.position = 'absolute';
     wow.style.width = '100%';
-    wow.style.height = '80%';
+    wow.style.height = '100%';
     wow.style.backgroundColor = 'silver';
     wow.style.border = 'groove black 2px';
     wow.style.margin = '.5%;';
@@ -215,6 +215,7 @@ function Winner(i) {
     x.style.position = 'relative';
     x.style.left = '20%';
     x.style.width = '45%';
+    x.style.maxHeight = '100%';
 }
 
 function clear() {
