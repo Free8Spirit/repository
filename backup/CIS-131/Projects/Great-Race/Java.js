@@ -1,8 +1,8 @@
 // JavaScript source code
 
-var Racer = ['Stitch.png', 'Zelda.png', 'Mario.png', 'Gir.png', 'Tinkerbell.png', 'Daxter.png', 'Grimoire.png', 'Squall.png'];             // Running images src ******** p.s. The file name becomes their name ^-^
-var Stance = ['SStitch.png', 'SZelda.png', 'SMario.png', 'SGir.png', 'STinkerbell.png', 'SDaxter.png', 'SGrimoire.png', 'SSquall.png'];     // Starting Stance image src
-var Victor = ['VStitch.png', 'VZelda.png', 'VMario.png', 'VGir.png', 'VTinkerbell.png', 'VDaxter.png', 'VGrimoire.png', 'VSquall.png'];     // Victory Pose image src
+var Racer = ['Spongebob.png', 'Stitch.png', 'Zelda.png', 'Mario.png', 'Gir.png', 'Tinkerbell.png', 'Daxter.png', 'Grimoire.png', 'Squall.png'];             // Running images src ******** p.s. The file name becomes their name ^-^
+var Stance = ['SSpongebob.png', 'SStitch.png', 'SZelda.png', 'SMario.png', 'SGir.png', 'STinkerbell.png', 'SDaxter.png', 'SGrimoire.png', 'SSquall.png'];     // Starting Stance image src
+var Victor = ['VSpongebob.png', 'VStitch.png', 'VZelda.png', 'VMario.png', 'VGir.png', 'VTinkerbell.png', 'VDaxter.png', 'VGrimoire.png', 'VSquall.png'];     // Victory Pose image src
 var futon = ['Start.png', 'Ready.png', 'Set.png', 'Go.png'];
 var hacker = !false;
 
@@ -53,6 +53,15 @@ function ScoreBoard() {
         board.appendChild(holder);
         holder.innerHTML = `<p onclick="cheater(${i})"> ${name} </p> <p id="Score${i}" onclick="cheater(${i})"> ${0} </p>`;
     }
+
+    var z = document.createElement('audio');
+    z.src = 'song.mp3';
+    z.setAttribute('loop', 'true');
+    z.setAttribute('autoplay', 'true');
+    z.type = 'audio/mp3';
+    z.play();
+    document.body.appendChild(z);
+
     set();
 }
 
