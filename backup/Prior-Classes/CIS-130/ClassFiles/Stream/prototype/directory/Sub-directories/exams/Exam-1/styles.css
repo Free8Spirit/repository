@@ -1,0 +1,64 @@
+p, html, h1, body, html {
+    margin: 0;
+}
+/*Structural Styles */
+body {
+    background-color: black;
+    color: black;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #226666;
+    text-align: center;
+}
+div {
+    padding: 0px 25px 0px 25px;
+}
+h2 {
+    font-size: .85em;
+}
+/*Header Rules */
+header {
+    border-bottom: 2px double black;
+    box-shadow: 0px 3px 5px;
+}
+h1 {
+    font-family: 'Akronim';
+}
+/* Navigation Styles */
+nav {
+    text-align: center;
+    padding: 15px;
+}
+a {
+    text-decoration: none;
+}
+a:visited, a:before {
+    color: #003333;
+}
+a:hover {
+    background-color: #669999;
+}
+/*Section Styles */
+section {
+    padding: 5px 25px 25px 25px;
+    border-top: 1px solid black;
+    background-color: #0D4D4D;
+    text-align: left;
+}
+.even {
+    color: #669999;
+}
+.odd {
+    background-color: #669999;
+}
+/*Footer Styles*/
+footer {
+    text-align: center;
+    font-weight: bold;
+    background-color: #669999;
+    border-bottom: 1px double black;
+    border-top: 1px double black;
+    margin: 15px 0px 0px 0px;
+}

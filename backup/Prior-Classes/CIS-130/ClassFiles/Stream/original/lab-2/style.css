@@ -1,0 +1,22 @@
+/*Name: Vert, David; Assignment-Name: About a Prouct; File-Name: style.css, linked product.html; Date-Due: 2/6/2018;*/
+img {
+    padding: .45% .45% .45% .45%;
+	width: 5%;
+}
+.Company_Name {
+    text-shadow: 0px 0px 3.2px lime;
+    color-interpolation: linearRGB;
+    font-weight: 200;
+    color: plum;
+    color-interpolation: sRGB;
+}
+.flair {
+    color: crimson;
+    text-shadow: 0px 0px 5.6px black;
+    font-weight: 200;
+}
+.quote {
+    color: violet;
+    font-weight: 900;
+    text-shadow: 0px 0px 5.2px magenta;
+}

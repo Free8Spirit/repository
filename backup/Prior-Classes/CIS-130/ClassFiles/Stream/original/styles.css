@@ -1,0 +1,184 @@
+body {
+    background-color: limegreen;
+    background-image: url(sources/410183b2394t3sxi.gif);
+    background-position: center center;
+    background-repeat: repeat;
+    background-origin: content-box;
+    color: magenta;
+    font-weight: 800;
+    font-size: 115%;
+    text-align: center;
+    vertical-align: central;
+    animation-name: color-changer;
+    animation-duration: 9999s;
+    animation-play-state: running;
+    animation-direction: alternate;
+    margin-top: auto;
+    margin-right: auto;
+}
+div {
+    position: absolute;
+    top: 8%;
+    left: 45%;
+    padding: 8% 0% 0% 0%;
+}
+video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    opacity: 0.2;
+    filter: alpha(opacity=50);
+}
+audio {
+    visibility: hidden;
+}
+header, footer {
+    font-family: 'Franklin Gothic Book';
+    font-size: 145%;
+    border: dotted;
+    border-color: darkslategray;
+    width: 30%;
+    background-size: auto;
+    background-color: black;
+}
+header {
+    position: fixed;
+    top: 3%;
+    right: 35%;
+    left: 35%;
+}
+footer {
+    position: fixed;
+    bottom: 3%;
+    right: 35%;
+    left: 35%;
+}
+a:link {
+    color: black;
+    text-shadow: 0px 0px 5px azure, 0px 0px 3.2px greenyellow;
+    font-size: xx-large;
+    text-decoration: none;
+	padding: 1% 1% 1% 1%;
+    background-size: auto;
+    background-color: azure;
+    border: dotted;
+    border-color: darkslategray;
+}
+a:visited {
+    color: black;
+    text-shadow: 0px 0px 5px azure, 0px 0px 3.2px greenyellow;
+    font-size: xx-large;
+    text-decoration: none;
+	padding: 1% 1% 1% 1%;
+    background-size: auto;
+    background-color: azure;
+    border: dotted;
+    border-color: darkslategray;
+}
+@keyframes color-changer {
+    0% {background-color: limegreen; color: darkmagenta;}
+    1% {background-color: aquamarine; color: crimson;}
+    2% {background-color: limegreen; color: darkmagenta;}
+    3% {background-color: aquamarine; color: crimson;}
+    4% {background-color: limegreen; color: darkmagenta;}
+    5% {background-color: aquamarine; color: crimson;}
+    6% {background-color: limegreen; color: darkmagenta;}
+    7% {background-color: aquamarine; color: crimson;}
+    8% {background-color: limegreen; color: darkmagenta;}
+    9% {background-color: aquamarine; color: crimson;}
+    10% {background-color: limegreen; color: darkmagenta;}
+    11% {background-color: aquamarine; color: crimson;}
+    12% {background-color: limegreen; color: darkmagenta;}
+    13% {background-color: aquamarine; color: crimson;}
+    14% {background-color: limegreen; color: darkmagenta;}
+    15% {background-color: aquamarine; color: crimson;}
+    16% {background-color: limegreen; color: darkmagenta;}
+    17% {background-color: aquamarine; color: crimson;}
+    18% {background-color: limegreen; color: darkmagenta;}
+    19% {background-color: aquamarine; color: crimson;}
+    20% {background-color: limegreen; color: darkmagenta;}
+    21% {background-color: aquamarine; color: crimson;}
+    22% {background-color: limegreen; color: darkmagenta;}
+    23% {background-color: aquamarine; color: crimson;}
+    24% {background-color: limegreen; color: darkmagenta;}
+    25% {background-color: aquamarine; color: crimson;}
+    26% {background-color: limegreen; color: darkmagenta;}
+    27% {background-color: aquamarine; color: crimson;}
+    28% {background-color: limegreen; color: darkmagenta;}
+    29% {background-color: aquamarine; color: crimson;}
+    30% {background-color: limegreen; color: darkmagenta;}
+    31% {background-color: aquamarine; color: crimson;}
+    32% {background-color: limegreen; color: darkmagenta;}
+    33% {background-color: aquamarine; color: crimson;}
+    34% {background-color: limegreen; color: darkmagenta;}
+    35% {background-color: aquamarine; color: crimson;}
+    36% {background-color: limegreen; color: darkmagenta;}
+    37% {background-color: aquamarine; color: crimson;}
+    38% {background-color: limegreen; color: darkmagenta;}
+    39% {background-color: aquamarine; color: crimson;}
+    40% {background-color: limegreen; color: darkmagenta;}
+    41% {background-color: aquamarine; color: crimson;}
+    42% {background-color: limegreen; color: darkmagenta;}
+    43% {background-color: aquamarine; color: crimson;}
+    44% {background-color: limegreen; color: darkmagenta;}
+    45% {background-color: aquamarine; color: crimson;}
+    46% {background-color: limegreen; color: darkmagenta;}
+    47% {background-color: aquamarine; color: crimson;}
+    48% {background-color: limegreen; color: darkmagenta;}
+    49% {background-color: aquamarine; color: crimson;}
+    50% {background-color: limegreen; color: darkmagenta;}
+    51% {background-color: aquamarine; color: crimson;}
+    52% {background-color: limegreen; color: darkmagenta;}
+    53% {background-color: aquamarine; color: crimson;}
+    54% {background-color: limegreen; color: darkmagenta;}
+    55% {background-color: aquamarine; color: crimson;}
+    56% {background-color: limegreen; color: darkmagenta;}
+    57% {background-color: aquamarine; color: crimson;}
+    58% {background-color: limegreen; color: darkmagenta;}
+    59% {background-color: aquamarine; color: crimson;}
+    60% {background-color: limegreen; color: darkmagenta;}
+    61% {background-color: aquamarine; color: crimson;}
+    62% {background-color: limegreen; color: darkmagenta;}
+    63% {background-color: aquamarine; color: crimson;}
+    64% {background-color: limegreen; color: darkmagenta;}
+    65% {background-color: aquamarine; color: crimson;}
+    66% {background-color: limegreen; color: darkmagenta;}
+    67% {background-color: aquamarine; color: crimson;}
+    68% {background-color: limegreen; color: darkmagenta;}
+    69% {background-color: aquamarine; color: crimson;}
+    70% {background-color: limegreen; color: darkmagenta;}
+    71% {background-color: aquamarine; color: crimson;}
+    72% {background-color: limegreen; color: darkmagenta;}
+    73% {background-color: aquamarine; color: crimson;}
+    74% {background-color: limegreen; color: darkmagenta;}
+    75% {background-color: aquamarine; color: crimson;}
+    76% {background-color: limegreen; color: darkmagenta;}
+    77% {background-color: aquamarine; color: crimson;}
+    78% {background-color: limegreen; color: darkmagenta;}
+    79% {background-color: aquamarine; color: crimson;}
+    80% {background-color: limegreen; color: darkmagenta;}
+    81% {background-color: aquamarine; color: crimson;}
+    82% {background-color: limegreen; color: darkmagenta;}
+    83% {background-color: aquamarine; color: crimson;}
+    84% {background-color: limegreen; color: darkmagenta;}
+    85% {background-color: aquamarine; color: crimson;}
+    86% {background-color: limegreen; color: darkmagenta;}
+    87% {background-color: aquamarine; color: crimson;}
+    88% {background-color: limegreen; color: darkmagenta;}
+    89% {background-color: aquamarine; color: crimson;}
+    90% {background-color: limegreen; color: darkmagenta;}
+    91% {background-color: aquamarine; color: crimson;}
+    92% {background-color: limegreen; color: darkmagenta;}
+    93% {background-color: aquamarine; color: crimson;}
+    94% {background-color: limegreen; color: darkmagenta;}
+    95% {background-color: aquamarine; color: crimson;}
+    96% {background-color: limegreen; color: darkmagenta;}
+    97% {background-color: aquamarine; color: crimson;}
+    98% {background-color: limegreen; color: darkmagenta;}
+    99% {background-color: aquamarine; color: crimson;}
+    100% {background-color: limegreen; color: darkmagenta;}
+}

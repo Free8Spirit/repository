@@ -1,0 +1,54 @@
+body {
+  background-image:url(../../../../sources/pictures/JPG/makeAppt.jpg);
+  background-size: cover;
+  background-attachment:fixed;
+  background-color:#508ec7;
+}
+.container {
+  margin:auto;
+  width:80%;
+  background-color: #eeeeee;
+  padding:25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+h2 {
+    text-align: center;
+}
+label {
+    display: block;
+    padding-bottom: 10px;
+    position: relative;
+}
+.F1 input {
+    position: absolute;
+    left: 18%;
+    width: 75%;
+}
+button {
+    position: relative;
+    top: 5px;
+}
+.F2 .date {
+    position: absolute;
+    right: 18%;
+}
+.F4 textarea {
+    width: 98%;
+}
+nav {
+    position: relative;
+    top: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+nav a:link, nav a:active, nav a:visited {
+    text-decoration: none;
+    box-decoration-break: clone;
+    margin: 5px;
+    width: auto;
+    padding: 1.2%;
+    background-color: azure;
+    color: black;
+}

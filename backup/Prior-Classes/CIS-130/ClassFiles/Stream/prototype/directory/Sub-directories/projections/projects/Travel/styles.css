@@ -1,0 +1,179 @@
+a {
+    padding: 5px;
+}
+body {
+    background-color: blueviolet;
+    color: azure;
+    text-shadow: 0px 0px 3px #0d8230;
+    font-size: x-large;
+    margin: 4.5%;
+    padding: 1.7%;
+    width: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header, footer {
+    background-image: linear-gradient(#f10067, #17d7dd);
+    color: #0200d7;
+    font-size: xx-large;
+    text-shadow: 0px 0px 5px black;
+    border: groove 5px #ff009c;
+    box-shadow: 0px 0px 5px azure;
+    margin: 3.6%;
+    clear: both;
+}
+footer {
+    background-image: linear-gradient(#17d7dd, #f10067);
+}
+nav {
+    clear: both;
+    box-sizing: border-box;
+    display: table;
+    width: 93%;
+    margin: 3.6%;
+    border: inset 5px #0a1b07;
+}
+nav a, a:link, a:visited {
+    display: table-cell;
+    color: azure;
+}
+nav a:nth-child(even) {
+    background-image: radial-gradient(#322827, #6b574e);
+}
+nav a:nth-child(odd) {
+    background-image: radial-gradient(#6b574e, #322827);
+}
+.main {
+    display: table;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 5%;
+}
+.sec1, .sec2, .sec3 {
+    display: table-cell;
+    width: 30%;
+    padding: .5%;
+    background-image: url(../../../../sources/pictures/JPG/celtic-knot.jpg);
+    border: ridge 4.3px black;
+}
+.scroll img {
+    width: 98%;
+    border: ridge 5px #a20a05;
+}
+h6 {
+    border: ridge 5px #2f8229;
+    background-color: #01211e;
+    text-shadow: 0px 0px 5px #f10067;
+    font-size: xx-large;
+}
+p {
+    border: ridge 5px #2ba734;
+    background-color: #3b1c7d;
+}
+.scroll {
+    background-image: url(../../../../sources/pictures/JPG/celtic.jpg);
+    background-size: cover;
+    border: groove 5px #0ee620;
+    padding: 2.5%;
+    width: 98%;
+    height: 95%;
+}
+.hidden1, .hidden2, .hidden3, .hidden4, .hidden5, .hidden6 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: inset 5px black;
+}
+@media screen and (width: 1001px) {
+    .hidden1 {
+        display: block;
+    }
+
+    .scroll, .main {
+        display: none;
+    }
+}
+@media screen and (width: 905px) {
+    .hidden2 {
+        display: block;
+    }
+
+    .scroll, .main {
+        display: none;
+    }
+}
+@media screen and (width: 626px) {
+    .hidden3 {
+        display: block;
+    }
+
+    .scroll, .main {
+        display: none;
+    }
+}
+@media screen and (width: 869px) {
+    .hidden4 {
+        display: block;
+    }
+
+    .scroll, .main {
+        display: none;
+    }
+}
+@media screen and (width: 1900px) {
+    .hidden5 {
+        display: block;
+    }
+
+    .scroll, .main {
+        display: none;
+    }
+}
+@media screen and (width: 1234px) {
+    .hidden6 {
+        display: block;
+    }
+
+    .scroll, .main {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .main, .sec1, .sec2, .sec3 {
+        display: block;
+    }
+    .sec1, .sec2 {
+        width: 40%;
+        float: left;
+        margin: 2.5%;
+    }
+    .sec3 {
+        clear: both;
+        float: none;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    nav a, a:link, a:visited {
+        display: table-row;
+    }
+    nav {
+        width: 18%;
+        float: left;
+        min-height: 25pc;
+        margin: auto;
+    }
+    .main {
+        float: right;
+        width: 48%;
+        display: block;
+        margin: auto;
+    }
+    .sec1, .sec2, .sec3 {
+        width: 90%;
+        display: block;
+    }
+    .main img {
+        display: none;
+    }
+}

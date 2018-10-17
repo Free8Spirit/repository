@@ -1,0 +1,90 @@
+body {
+    background-color: #371607;
+    color: azure;
+    width: auto;
+    text-align: center;
+    padding: 2.5%;
+    font-size: large;
+    box-sizing: border-box;
+    background-image: url(../../../sources/pictures/JPG/staircase.jpg);
+    background-size: contain;
+}
+header, footer {
+    border: 2px groove rgba(0, 254, 223, 0.83);
+    background-image: url(../../../sources/pictures/JPG/Jolly-Roger.jpg);
+    background-size: contain;
+    margin: 4% 8%;
+    padding: 2.5%;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-shadow: 0px 0px 5px rgba(255, 0, 62, 0.96), 0px 0px 8px #5e00bd;
+    color: #31ff00;
+}
+nav {
+    box-sizing: content-box;
+    padding: 1.2%;
+    margin: 3%;
+}
+nav a:link, nav a:active, nav a:visited {
+    text-decoration: none;
+    box-decoration-break: clone;
+    border: 2px groove rgba(230, 168, 21, 0.86);
+    margin: 4% 8%;
+    padding: 1.2%;
+    background-color: #4c4b46;
+    color: #c4c0b2;
+}
+nav a:hover {
+    color: black;
+    background-color: #c4c0b2;
+    border: 2px groove rgba(222, 41, 0, 0.96);
+}
+.post, .box {
+    float: none;
+    margin: 2% 8%;
+    overflow: auto;
+}
+.post {
+    background-color: black;
+    border: 2px groove #64625d;
+    padding: 2%;
+}
+.box, .post p, .post img {
+    padding: 1.2%;
+}
+.post p {
+    width: 65%;
+}
+.post img {
+    padding: 0px;
+    width: 15%;
+    height: 15%;
+    min-height: 75px;
+    min-width: 75px;
+    position: relative;
+    top: 5px;
+    margin: 5px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.organize b {
+    background-color: #0a0a0a;
+    border: 5px groove #23a84d;
+    box-sizing: content-box;
+    width: 35%;
+    padding: 5%;
+    float: right;
+    position: relative;
+    top: 45px;
+}
+.organize img {
+    width: 45%;
+    min-width: 250px;
+    min-height: 250px;
+    max-height: 500px;
+    max-width: 450px;
+}

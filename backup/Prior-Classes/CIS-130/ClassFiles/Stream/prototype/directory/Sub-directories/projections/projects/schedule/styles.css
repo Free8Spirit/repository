@@ -1,0 +1,55 @@
+body {
+    width: auto;
+    background-color: black;
+    background-image: url(../../../../sources/pictures/JPG/download.jpg);
+    background-size: cover;
+    font-size: x-large;
+}
+table, td, tr, th {
+    background-color: azure;
+    color: azure;
+    border: 2px darkmagenta solid;
+    padding: 15px;
+    width: auto;
+    text-align: center;
+    margin: auto;
+    opacity: 0.86;
+}
+th {
+    color: crimson;
+    background-color: aquamarine;
+    text-shadow: 0px 0px 2.5px black;
+}
+h6 {
+    background-color: black;
+    border: 2px solid crimson;
+    opacity: .86;
+    padding: 3px;
+    width: 20%;
+    text-align: center;
+    font-size: xx-large;
+    position: relative;
+    left: 40%;
+}
+.swap {
+    background-color: darkturquoise;
+}
+.title {
+    background-color: darkgreen;
+    color: cyan;
+}
+.class {
+    background-color: burlywood;
+    text-shadow: 0px 0px 2.5px #4e526f;
+    color: #311706;
+}
+
+.time {
+    background-color: silver;
+    text-shadow: 0px 0px 2.5px #311706;
+    color: #4e526f;
+}
+.free {
+    background-color: darkslategrey;
+    text-shadow: 0px 0px 2.5px #1e1711;
+}
